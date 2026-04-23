@@ -6,8 +6,8 @@ import joblib
 app = FastAPI()
 
 # Load model
-model = joblib.load("model.pkl")
-vectorizer = joblib.load("vectorizer.pkl")
+model = joblib.load("Models/model.pkl")
+vectorizer = joblib.load("Models/vectorizer.pkl")
 
 # Input format
 class InputData(BaseModel):
